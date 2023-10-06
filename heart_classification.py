@@ -65,8 +65,8 @@ print(y_predict)
 print("accuracy = ",accuracy_score(y_test, y_predict)*100) #88%
 cm=confusion_matrix(y_test, y_predict)
 print(cm)
-#sns.heatmap(cm)
-#plt.show()
+sns.heatmap(cm)
+plt.show()
 
 x_test=np.matrix([57,1,0,110,201,0,1,126,1,1.5,1,0,1])
 print(model.predict(x_test))
